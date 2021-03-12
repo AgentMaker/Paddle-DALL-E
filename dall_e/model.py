@@ -1,4 +1,3 @@
-import paddle
 import paddle.nn as nn
 
 
@@ -35,6 +34,8 @@ class EncoderBlock(nn.Layer):
 class Encoder(nn.Layer):
     def __init__(self, group_count=4, n_hid=256, n_blk_per_group=2, input_channels=3, vocab_size=8192):
         super(Encoder, self).__init__()
+        self.vocab_size = vocab_size
+        
         blk_range = range(n_blk_per_group)
         n_layers = group_count * n_blk_per_group
 
@@ -94,6 +95,7 @@ class DecoderBlock(nn.Layer):
 class Decoder(nn.Layer):
     def __init__(self, group_count=4, n_init=128, n_hid=256, n_blk_per_group=2, output_channels=3, vocab_size=8192):
         super(Decoder, self).__init__()
+        self.vocab_size = vocab_size
 
         blk_range = range(n_blk_per_group)
         n_layers = group_count * n_blk_per_group
