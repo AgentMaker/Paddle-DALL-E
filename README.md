@@ -1,5 +1,6 @@
 # Paddle-DALL-E
-A PaddlePaddle version implementation of DALL-E of OpenAI.
+A PaddlePaddle version implementation of DALL-E of OpenAI. [【origin repo】](https://github.com/openai/DALL-E)
+Now this implementation only include the dVAE part, can't generate images from text.
 
 ## Quick Start
 ```python
