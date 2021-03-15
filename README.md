@@ -1,4 +1,7 @@
 # Paddle-DALL-E
+![GitHub forks](https://img.shields.io/github/forks/AgentMaker/Paddle-DALL-E)
+![GitHub Repo stars](https://img.shields.io/github/stars/AgentMaker/Paddle-DALL-E)
+![GitHub](https://img.shields.io/github/license/AgentMaker/Paddle-DALL-E)  
 A PaddlePaddle version implementation of DALL-E of OpenAI. [【origin repo】](https://github.com/openai/DALL-E)
 
 Now this implementation only include the dVAE part, can't generate images from text.
