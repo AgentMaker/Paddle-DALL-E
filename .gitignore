@@ -133,3 +133,9 @@ dmypy.json
 test.py
 .pretrained_models/
 pretrained_models/
+build/
+.build/
+dist/
+.dist/
+paddledalle.egg-info/
+.paddledalle.egg-info/
